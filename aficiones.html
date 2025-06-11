@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aficiones</title>
+	<link rel="stylesheet" href="style.css" />
+	<script>
+		function tema() {
+			document.body.classList.toggle("halloween");
+		}
+	</script>
+</head>
+<body>
+
+	<div class="barra-superior">
+		<nav class="menu-principal">
+			<details>
+				<summary>Índice</summary>
+				<ul>
+					<li><a href="index.html">Portada</a></li>
+					<li><a href="cv.html">Curriculum</a></li>
+					<li><a href="juego.html">Juego</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</details>
+		</nav>
+		<div class="boton-derecha">
+			<button onclick="tema()">Cambiar Tema</button>
+		</div>
+	</div>
+
+	<header>
+		<h1>AFICIONES</h1>
+		<p><img src="GamerCat.jpg" alt="Imagen GamerCat" width="560" height="400"></p>
+	</header>
+
+	<main>
+		<h2>Mis aficiones</h2>
+		<ul>
+			<li>- Jugar videojuegos</li>
+			<li>- Jugar a juegos de mesa</li>
+			<li>- Crear cosas nuevas</li>
+			<li>- Disfrutar de tiempo con amigos</li>
+			<li></li>
+		</ul>
+
+		<section id="juegos-favoritos">
+			<h2>Mis juegos favoritos</h2>
+
+			<h3>Undertale by Toby Fox</h3>
+			<video width="560" height="315" controls>
+				<source src="Undertale.mp4" type="video/mp4">
+				Tu navegador no soporta video HTML5.
+			</video>
+
+			<h3>Rust by Facepunch</h3>
+			<video width="560" height="315" controls>
+				<source src="Rust.mp4" type="video/mp4">
+				Tu navegador no soporta video HTML5.
+			</video>
+
+			<h3>The Binding of Isaac by Edmun McMillen</h3>
+			<video width="560" height="315" controls>
+				<source src="TBOI.mp4" type="video/mp4">
+				Tu navegador no soporta video HTML5.
+			</video>
+		</section>
+	</main>
+
+	<footer>
+		<p>Copyright (c) 2024-2077</p>
+	</footer>
+</body>
+</html>
+

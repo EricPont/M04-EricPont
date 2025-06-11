@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1a0000, #4b0015);
+  color: #f8f0f2;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.barra-superior {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.menu-izquierda {
+  background-color: rgba(139, 0, 0, 0.95);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-izquierda summary {
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.menu-izquierda ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.menu-izquierda li {
+  margin: 8px 0;
+}
+
+.menu-izquierda a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-izquierda a:hover {
+  color: #ff3366;
+  text-decoration: underline;
+}
+
+.boton-derecha button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #8b0000;
+  color: #fff;
+  border: 2px solid #f8f0f2;
+  transition: all 0.3s ease;
+}
+
+.boton-derecha button:hover {
+  background-color: #a3001e;
+  transform: scale(1.05);
+}
+
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(75, 0, 21, 0.8);
+  text-shadow: 1px 1px #8b0000;
+  border-bottom: 4px solid #8b0000;
+}
+
+footer {
+  background-color: #1a0000;
+  color: #f8f0f2;
+  border-top: 2px solid #8b0000;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #e6b3b3;
+  border: 2px solid #8b0000;
+  text-decoration: underline;
+  text-decoration-color: #a3001e;
+  padding: 5px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.foto-perfil img {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+
+
+body.halloween {
+  background-image: url('navidad.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #d0f5c2; 
+}
+
+body.halloween header {
+  background-color: rgba(0, 30, 0, 0.6);
+  border-bottom: 4px solid #009933;
+}
+
+body.halloween footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-top: 4px dashed #003300;
+  color: #d0f5c2;
+}
+
+body.halloween h2 {
+  color: #00cc66;
+  border-color: #00cc66;
+  text-decoration-color: #00cc66;
+}
+
+body.halloween a {
+  color: #99ff99;
+}
+
+body.halloween a:hover {
+  color: #00cc00;
+}
+
+body.halloween main,
+body.halloween header {
+  background-color: rgba(0, 50, 0, 0.5);
+}
+
+body.halloween .boton-derecha button {
+  background-color: #00cc66;
+  color: #000;
+  border: 2px solid #003300;
+}
+
+body.halloween .boton-derecha button:hover {
+  background-color: #009933;
+  color: #fff;
+}

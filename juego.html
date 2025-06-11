@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego</title>
+	<link rel="stylesheet" href="style.css" />
+	<script>
+		let numero_min = 1;
+		let numero_max = 100;
+		let numero_random = Math.floor(Math.random() * numero_max) + numero_min;
+		console.log("El número a adivinar es: " + numero_random);
+
+		function check_numero() {
+			let valor = parseInt(document.getElementById("juego_numero").value);
+			let resultado = document.getElementById("resultado");
+
+			if (isNaN(valor) || valor < numero_min || valor > numero_max) {
+				resultado.innerHTML = "<strong>Por favor, introduce un número entre 1 y 100.</strong>";
+				return;
+			}
+
+			let text = "";
+			if (valor > numero_random) {
+				text = "El número a adivinar es menor que " + valor;
+			} else if (valor < numero_random) {
+				text = "El número a adivinar es mayor que " + valor;
+			} else {
+				text = "🎉 ¡Has ganado! El número era " + numero_random;
+			}
+			resultado.innerHTML = text;
+		}
+
+		function tema() {
+			document.body.classList.toggle("halloween");
+		}
+	</script>
+</head>
+<body>
+	<div class="barra-superior">
+		<nav class="menu-izquierda">
+			<details>
+				<summary>Índice</summary>
+				<ul>
+					<li><a href="index.html">Portada</a></li>
+					<li><a href="cv.html">Currículum</a></li>
+					<li><a href="aficiones.html">Aficiones</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
+				</ul>
+			</details>
+		</nav>
+		<div class="boton-derecha">
+			<button onclick="tema()">Cambiar Tema</button>
+		</div>
+	</div>
+
+	<header>
+		<h1>Juego</h1>
+		<p><img src="GamerCat.jpg" width="560" height="400" alt="Imagen GamerCat"></p>
+	</header>
+
+	<main>
+		<h2>Mi juego</h2>
+		<form onsubmit="return false;">
+			<h3>Adivina el número</h3>
+			<p>Introduce un número entre el 1 y el 100 para adivinar el número oculto:</p>
+			<p>Número: <input type="number" id="juego_numero" name="numero" /></p>
+			<p><input type="button" onclick="check_numero()" value="Adivinar" /></p>
+			<p><output id="resultado">Introduce el número en el campo de texto</output></p>
+		</form>
+	</main>
+
+	<footer>
+		<p>Copyright (c) 2024-2077</p>
+	</footer>
+</body>
+</html>
+
