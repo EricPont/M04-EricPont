@@ -115,6 +115,9 @@
                             if (object.tintTopLeft === huevera.color) {
                                 console.log("huevera correcta");
                                 puntuacion += obtenerPuntuacionHuevo(object);
+                                tiempoRestante += 2;
+                                textoTemporizador.setText('Tiempo: ' + tiempoRestante);
+                                textoPuntuacion.setText('Puntuación: ' + puntuacion);
                                 textoPuntuacion.setText('Puntuación: ' + puntuacion);
                                 correcto = true;
                                 object.x = huevera.object.x;
